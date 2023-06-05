@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Overpass';
+    background-color: hsl(216, 12%, 8%);
+    color: hsl(0, 0%, 100%);
+    overflow: hidden;
+}
+
+/* Desktop */
+@media screen and (min-width:1024px){
+    /* Body centralizado */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Overpass';
+    background-color: hsl(216, 12%, 8%);
+    color: hsl(0, 0%, 100%);
+}
+
+
+/* Container do componente */
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 1.8rem 0 0 1.8rem;
+    height: 58vh;
+    width: 58vh;
+    border-radius: 1.1rem;
+    background-color: hsla(213, 27%, 13%, 0.89);
+}
+
+.container-icon{
+    margin: 0 0 1.2rem 0;
+}
+
+#btn-icon {
+    border-radius: 50%;
+    border: none;
+    padding: 1.2rem;
+    background-color: hsla(213, 27%, 16%, 0.89);
+}
+
+#title{
+    font-size: 2rem;
+}
+
+.container-icon,
+.t-container,
+.p-container {
+    padding: 0 0 0.7rem;
+}
+
+#paragraph {
+    font-family: 'Overpass';
+    font-weight: 400;
+    font-size: 18px;
+    color: hsl(217, 12%, 63%);
+    line-height: 1.5;
+}
+
+.container-options {
+    display: flex;
+}
+
+.btn {
+    margin: 1.3rem 1.2rem 0 0.4rem;
+    width: 4.5em;
+    height: 4.5em;
+    border: none;
+    border-radius: 50%;
+    font-family: 'Overpass';
+    color: hsl(217, 12%, 63%);
+    background-color: hsl(213, 19%, 18%);
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+
+.container-submit {
+    margin-top: 2rem;
+}
+
+#submit {
+    border-radius: 28px;
+    padding: 1.1rem;
+    width: 50vh;
+    border: none;
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    text-transform: uppercase;
+    font-family: 'Overpass';
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+#submit{
+    cursor: pointer;
+}
+
+}
+
+
+/* Mobile first */
+@media (max-width:375px) {
+
+
+
+    /* Container do componente */
+    .container {
+        display: flex;
+        flex-direction: column;
+        padding: 1.8rem 0 0 1.4rem;
+        height: 58vh;
+        width: 54vh;
+        border-radius: 1.1rem;
+        background-color: hsla(213, 19%, 15%, 1);
+    }
+
+    #btn-icon {
+        border-radius: 50%;
+        border: none;
+        padding: 0.6rem;
+        background-color: hsla(215, 10%, 25%, 0.837)
+    }
+
+    .container-icon,
+    .t-container,
+    .p-container {
+        padding: 0 0 0.7rem;
+    }
+
+    #paragraph {
+        font-family: 'Overpass';
+        font-weight: 400;
+        font-size: 12px;
+        color: hsl(217, 12%, 63%);
+        line-height: 1.5;
+    }
+
+    .container-options {
+        display: flex;
+    }
+
+    .btn {
+        margin: 0 1.2rem 0 0;
+        width: 3em;
+        height: 3em;
+        border: none;
+        border-radius: 50%;
+        font-family: 'Overpass';
+        color: hsl(217, 12%, 63%);
+        background-color: hsla(215, 10%, 25%, 0.837);
+    }
+
+
+    .container-submit {
+        margin-top: 1rem;
+    }
+
+    #submit {
+        border-radius: 25px;
+        padding: 0.9rem;
+        width: 46vh;
+        border: none;
+        background-color: hsl(25, 97%, 53%);
+        color: hsl(0, 0%, 100%);
+        text-transform: uppercase;
+        font-family: 'Overpass';
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+
+
+
+}
